@@ -7,10 +7,6 @@ manifest:
       remote: zmkfirmware
       revision: main
       import: app/west.yml
-    - name: zmk-behavior-simple-layer
-      path: modules/zmk-behavior-simple-layer
-      url: https://github.com/urob/zmk-behavior-simple-layer
-      revision: main
 
   self:
     path: config

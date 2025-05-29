@@ -80,7 +80,7 @@
 
     PNTR {
         if-layers = <1 2>;
-        then-layer = <4>; // Change from 3 to 4
+        then-layer = <3>; // Change from 3 to 4
     }
 };
 

@@ -28,8 +28,8 @@
 
             // --------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   | 
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+            // | SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   | 
+            // | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
@@ -43,14 +43,14 @@
         lower_layer {
             display-name = "NUMBER";
 
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
-            // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            // ---------------------------------------------------------------------------
+            // | TAB  | 7 | 8 | 9 | = | / |   | PG_UP|  UP | PG_DOWN | HOME |  \   | BKSP|
+            // | SHFT | 4 | 5 | 6 | 0 | [ |   | LFT  | DWN |  RIGHT  | END  | CAPS | DEL |
+            // | CTRL | 1 | 2 | 3 | - | ] |   | PREV | P_P |  NEXT   | LCLK | MENU |  `  |
+            //          | GUI | LWR | SPC |   | ENT | RSE | ALT |
 
             bindings = <
-&trans  &kp N7        &kp N8        &kp N9        &kp EQUAL  &kp SLASH            &kp PG_UP       &kp UP_ARROW      &kp PAGE_DOWN  &kp HOME   &kp NON_US_BACKSLASH  &kp DEL
+&trans  &kp N7        &kp N8        &kp N9        &kp EQUAL  &kp SLASH            &kp PG_UP       &kp UP_ARROW      &kp PAGE_DOWN  &kp HOME   &kp NON_US_BACKSLASH  &kp BSPC
 &trans  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp N0     &kp LEFT_BRACKET     &kp LEFT        &kp DOWN          &kp RIGHT      &kp END    &kp CAPS              &kp DEL
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp MINUS  &kp RIGHT_BRACKET    &kp C_PREVIOUS  &kp K_PLAY_PAUSE  &kp C_NEXT     &mkp LCLK  &kp K_CONTEXT_MENU    &kp GRAVE
                                     &trans        &trans     &trans               &trans          &trans            &trans
@@ -60,11 +60,11 @@
         raise_layer {
             display-name = "SYMBOL";
 
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
+            // --------------------------------------------------------------
+            // |  TAB  | F9 | F10 | F11 | F12 | INS  |    | | | | | | BKSPC |
+            // | SHIFT | F5 | F6  | F7  | F8  | PRSC |    | | | | | |   '   |
+            // | CTRL  | F1 | F2  | F3  | F4  |      |    | | | | | |  ESC  |
+            //                        |LGUI|LWE|SPACE|    |ENTER|RSE|RALT|
 
             bindings = <
 &trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp INS            &none    &none   &none     &none  &none  &trans
@@ -76,6 +76,13 @@
 
         layer_3 {
             display-name = "Fn";
+
+             // -------------------------------------------------------------------------------
+            // |  TAB  |  BT_NXT   | | | | |    | | | | BL_TOG  | | BKSPC |
+            // | SHIFT | BT_CLR_ALL| | | | |    | | | | RGB_EFF | |   '   |
+            // | CTRL  |           | | | | |    | | | |         | |  ESC  |
+            //              |LGUI|LWE|SPACE|    |ENTER|RSE|LALT|
+
             bindings = <
 &trans  &bt BT_NXT      &none  &none   &none   &none     &none   &none   &none   &bl BL_TOG       &none  &none
 &trans  &bt BT_CLR_ALL  &none  &none   &none   &none     &none   &none   &none   &rgb_ug RGB_EFF  &none  &none

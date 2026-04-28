@@ -58,7 +58,7 @@
         };
 
         raise_layer {
-            display-name = "SYMBOL";
+            display-name = "FN";
 
             // --------------------------------------------------------------
             // |  TAB  | F9 | F10 | F11 | F12 | INS  |    | | | | | | BKSPC |
@@ -66,16 +66,16 @@
             // | CTRL  | F1 | F2  | F3  | F4  |      |    | | | | | |  ESC  |
             //                        |LGUI|LWE|SPACE|    |ENTER|RSE|RALT|
 
-            bindings = <
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp INS            &none    &none   &none     &none  &none  &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN    &none    &none   &none     &none  &none  &trans
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &none              &none    &none   &none     &none  &none  &trans
-                         &trans   &trans   &kp SPACE          &kp RET  &trans  &kp RALT
+            bindings = 
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp INS            &mkp LCLK        &mmv MOVE_UP    &mkp RCLK         &msc SCRL_UP    &none  &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp PRINTSCREEN    &mmv MOVE_LEFT   &mmv MOVE_DOWN  &mmv MOVE_RIGHT   &msc SCRL_DOWN  &none  &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &none              &none            &mkp MCLK       &none             &none           &none  &trans
+                         &trans   &trans   &kp SPACE          &kp RET          &trans          &kp RALT
             >;
         };
 
         layer_3 {
-            display-name = "Fn";
+            display-name = "bt&rgb";
 
              // -------------------------------------------------------------------------------
             // |  TAB  |  BT_NXT   | | | | |    | | | | BL_TOG  | | BKSPC |
@@ -96,7 +96,7 @@
         compatible = "zmk,conditional-layers";
 
         layer {
-            if-layers = <0 2>;
+            if-layers = <1 2>;  // active when BOTH mo 1 AND mo 2 are held simultaneously
             then-layer = <3>;
         };
     };

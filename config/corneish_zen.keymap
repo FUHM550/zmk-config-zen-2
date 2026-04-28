@@ -58,7 +58,7 @@
         };
 
         raise_layer {
-            display-name = "SYMBOL";
+            display-name = "FN";
 
             // --------------------------------------------------------------
             // |  TAB  | F9 | F10 | F11 | F12 | INS  |    | | | | | | BKSPC |
@@ -75,7 +75,7 @@
         };
 
         layer_3 {
-            display-name = "Fn";
+            display-name = "BT&RGB";
 
             // -------------------------------------------------------------------------------
             // |  TAB  |  BT_NXT   |     | | | |    | | | | BL_TOG  | | BKSPC |

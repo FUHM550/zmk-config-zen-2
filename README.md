@@ -2,7 +2,7 @@
 2.the key matrix is same as normal corne
 
 <h1 align="center">⌨️ ZMK Keymap</h1>
-<p align="center">Layered • Clean • Split</p>
+<p align="center">Layered Split</p>
 
 ---
 

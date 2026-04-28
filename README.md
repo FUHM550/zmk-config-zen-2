@@ -70,7 +70,6 @@
 
 ---
 
-## Legend
 - `LWR` → Lower layer  
 - `RSE` → Raise layer  
 - `GUI` → Cmd / Win  

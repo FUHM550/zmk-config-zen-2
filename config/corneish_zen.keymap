@@ -58,12 +58,12 @@
         };
 
         raise_layer {
-            display-name = "FN";
+            display-name = "FN&PTR";
 
             // --------------------------------------------------------------
-            // |  TAB  | F9 | F10 | F11 | F12 | INS  |    | | | | | | BKSPC |
-            // | SHIFT | F5 | F6  | F7  | F8  | PRSC |    | | | | | |   '   |
-            // | CTRL  | F1 | F2  | F3  | F4  |      |    | | | | | |  ESC  |
+            // |  TAB  | F9 | F10 | F11 | F12 | INS  |    |lck |mup |rck |sup |  | BKSPC |
+            // | SHIFT | F5 | F6  | F7  | F8  | PRSC |    |mlf |mdn |mrt |sdn |  |   '   |
+            // | CTRL  | F1 | F2  | F3  | F4  |      |    |    |    |slf |srt |  |  ESC  |
             //                        |LGUI|LWE|SPACE|    |ENTER|RSE|RALT|
 
             bindings = <

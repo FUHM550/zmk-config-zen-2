@@ -41,11 +41,11 @@
 ## Function / Pointer Layer 
 <pre>
 ┌────┬────┬────┬────┬────┬────┐     ┌────┬────┬────┬────┬────┬────┐
-│TAB │ F9 │F10 │F11 │F12 │INS │     │LCLK│M_UP│RCLK│S_UP│    │BSPC│
+│TAB │ F9 │F10 │F11 │F12 │INS │     │MB_1│M_UP│MB_2│S_UP│    │BSPC│
 ├────┼────┼────┼────┼────┼────┤     ├────┼────┼────┼────┼────┼────┤
 │SFT │ F5 │ F6 │ F7 │ F8 │PRSC│     │M_L │M_DN│M_R │S_DN│    │ '  │
 ├────┼────┼────┼────┼────┼────┤     ├────┼────┼────┼────┼────┼────┤
-│CTRL│ F1 │ F2 │ F3 │ F4 │    │     │    │    │S_LT│S_RT│    │ESC │
+│CTRL│ F1 │ F2 │ F3 │ F4 │    │     │MB_3│    │S_LT│S_RT│    │ESC │
 └────┴────┴────┴────┴────┴────┘     └────┴────┴────┴────┴────┴────┘
                ┌────┬────┬────┐     ┌────┬────┬────┐
                │GUI │LWR │SPC │     │ENT │RSE │ALT │
@@ -76,7 +76,7 @@
 - `PLY` → Play/Pause  
 - `BT_*` → Bluetooth controls  
 - `M_direction` → Pointer controls
-- - `S_direction` → Scroll controls
+- `S_direction` → Scroll controls
  
     
 

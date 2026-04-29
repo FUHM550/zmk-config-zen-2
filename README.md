@@ -22,7 +22,7 @@
 
 ---
 
-##  Number / Symbol Layer
+##  Number / Symbol / Keyboard navigation Layer
 <pre>
 ┌────┬────┬────┬────┬────┬────┐     ┌──────┬────┬──────┬────┬────┬────┐
 │TAB │ 7  │ 8  │ 9  │ =  │ /  │     │PG_UP │ UP │PG_DN │HOME│ \  │BSPC│
@@ -38,7 +38,7 @@
 
 ---
 
-## Function Layer
+## Function / Pointer Layer 
 <pre>
 ┌────┬────┬────┬────┬────┬────┐     ┌────┬────┬────┬────┬────┬────┐
 │TAB │ F9 │F10 │F11 │F12 │INS │     │LCLK│M_UP│RCLK│S_UP│    │BSPC│
@@ -54,7 +54,7 @@
 
 ---
 
-## System / Bluetooth / RGB
+## System / Bluetooth / RGB Layer 
 <pre>
 ┌────┬────────┬────────┬────┬────┬────┐     ┌────┬────┬────────┬────┬────┬────┐
 │TAB │ BT_NXT │        │    │    │    │     │v_UP│    │BL_TOG  │    │    │BSPC│
@@ -75,3 +75,8 @@
 - `GUI` → Cmd / Win  
 - `PLY` → Play/Pause  
 - `BT_*` → Bluetooth controls  
+- `M_direction` → Pointer controls
+- - `S_direction` → Scroll controls
+ 
+    
+

@@ -75,19 +75,34 @@
         };
 
         layer_3 {
-            display-name = "BT&RGB";
+            display-name = "VOL&RGB";
 
             // -------------------------------------------------------------------------------
-            // |  TAB  |  BT_NXT   |     | | | |    | | | | BL_TOG  | | BKSPC |
-            // | SHIFT | BT_CLR_ALL|     | | | |    | | | | RGB_EFF | |   '   |
-            // | CTRL  | BT_OUT    | USB | | | |    | | | |         | |  ESC  |
-            //              |LGUI|LWE|SPACE|    |ENTER|RSE|LALT|
+            // |  TAB  | | | | | layer 4 toggle |    | C_VOLUME_UP | | | BL_TOG  | | BKSPC |
+            // | SHIFT | | | | |              |    | C_VOLUME_DOWN | | | RGB_EFF | |   '   |
+            // | CTRL  | | | | |              |    | C_MUTE| | |         | |  ESC  |
+            //        |LGUI|LWE|    SPACE     |    |ENTER|RSE|LALT|
 
             bindings = <
-&trans  &bt BT_NXT      &none         &none   &none   &none     &kp C_VOLUME_UP    &none   &none   &rgb_ug RGB_TOG  &none  &none
-&trans  &bt BT_CLR_ALL  &none         &none   &none   &none     &kp C_VOLUME_DOWN  &none   &none   &rgb_ug RGB_EFF  &none  &none
-&trans  &out OUT_BLE    &out OUT_USB  &none   &none   &none     &kp C_MUTE         &none   &none   &none            &none  &none
+&trans  &bt none     &none         &none   &none   &mo 4     &kp C_VOLUME_UP    &none   &none   &rgb_ug RGB_TOG  &none  &none
+&trans  &bt none     &none         &none   &none   &none     &kp C_VOLUME_DOWN  &none   &none   &rgb_ug RGB_EFF  &none  &none
+&trans  &out none    &out none     &none   &none   &none     &kp C_MUTE         &none   &none   &none            &none  &none
                                       &trans  &trans  &trans    &trans             &trans  &trans
+            >;
+        };
+                layer_4 {
+            // -------------------------------------------------------------------------------
+            // |  TAB  |  BT_NXT   |     | | | |   | | | | | | BKSPC |
+            // | SHIFT | BT_CLR_ALL|     | | | |   | | | | | |   '   |
+            // | CTRL  | BT_OUT    | USB | | | |   | | | | | |  ESC  |
+            //                  |LGUI|LWE|SPACE|   |ENTER|RSE|LALT|
+
+            display-name = "BT";
+            bindings = <
+        &trans  &bt BT_NXT  &none  &none   &none   &none     &none   &none   &none   &none  &none  &none
+        &trans  &bt BT_CLR  &none  &none   &none   &none     &none   &none   &none   &none  &none  &none
+        &trans  &none       &none  &none   &none   &none     &none   &none   &none   &none  &none  &none
+                                &trans  &trans   &trans    &trans  &trans  &trans
             >;
         };
     };

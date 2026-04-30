@@ -60,7 +60,7 @@
         raise_layer {
             display-name = "FN&PTR";
 
-            // --------------------------------------------------------------
+            // ---------------------------------------------------------------------------
             // |  TAB  | F9 | F10 | F11 | F12 | INS  |    |lck |mup |rck |sup |  | BKSPC |
             // | SHIFT | F5 | F6  | F7  | F8  | PRSC |    |mlf |mdn |mrt |sdn |  |   '   |
             // | CTRL  | F1 | F2  | F3  | F4  |      |    |    |    |slf |srt |  |  ESC  |
@@ -77,21 +77,21 @@
         layer_3 {
             display-name = "VOL&RGB";
 
-            // -------------------------------------------------------------------------------
+            // -----------------------------------------------------------------------------
             // |  TAB  | | | | | layer 4 toggle |    | C_VOLUME_UP | | | BL_TOG  | | BKSPC |
             // | SHIFT | | | | |              |    | C_VOLUME_DOWN | | | RGB_EFF | |   '   |
             // | CTRL  | | | | |              |    | C_MUTE| | |         | |  ESC  |
             //        |LGUI|LWE|    SPACE     |    |ENTER|RSE|LALT|
 
             bindings = <
-&trans  &none     &none   &none   &none   &mo 4     &kp C_VOLUME_UP    &none   &none   &rgb_ug RGB_TOG  &none  &none
-&trans  &none     &none   &none   &none   &none     &kp C_VOLUME_DOWN  &none   &none   &rgb_ug RGB_EFF  &none  &none
-&trans  &none     &none   &none   &none   &none     &kp C_MUTE         &none   &none   &none            &none  &none
+&trans  &none     &none   &none   &none   &mo 4     &kp C_VOLUME_UP    &none   &none   &rgb_ug RGB_TOG  &none  &trans
+&trans  &none     &none   &none   &none   &none     &kp C_VOLUME_DOWN  &none   &none   &rgb_ug RGB_EFF  &none  &trans
+&trans  &none     &none   &none   &none   &none     &kp C_MUTE         &none   &none   &none            &none  &trans
                           &trans  &trans  &trans    &trans             &trans  &trans
             >;
         };
                 layer_4 {
-            // -------------------------------------------------------------------------------
+            // -------------------------------------------------------
             // |  TAB  |  BT_NXT   |     | | | |   | | | | | | BKSPC |
             // | SHIFT | BT_CLR_ALL|     | | | |   | | | | | |   '   |
             // | CTRL  | BT_OUT    | USB | | | |   | | | | | |  ESC  |
